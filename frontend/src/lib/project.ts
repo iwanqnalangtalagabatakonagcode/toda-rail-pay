@@ -1,0 +1,20 @@
+export const project = {
+  name: "TODA Rail Pay",
+  oldName: "Tricycle Driver Cooperative Banking",
+  slug: "toda-rail-pay",
+  track: "Track 2 Financial Inclusion & Everyday Payments",
+  oneLine: "A cooperative treasury rail for TODA drivers to collect dues, record savings, and release member payouts on Stellar.",
+  users: "tricycle drivers, TODA treasurers, and transport cooperatives",
+  approach: "Cooperative dues and member payout rail",
+  integration: "Stellar Wallets Kit is the expansion path for Freighter, xBull, and LOBSTR access beyond the current Freighter-first prototype.",
+  contractId: process.env.NEXT_PUBLIC_CONTRACT_ID || "CDLI5WYTSCIZKQBFH3AAGDTSFRNLOSBSFEQEQRE473WVTVJFEAW6PG4Y",
+  rpcUrl: process.env.NEXT_PUBLIC_SOROBAN_RPC || "https://soroban-testnet.stellar.org",
+  horizonUrl: process.env.NEXT_PUBLIC_HORIZON_URL || "https://horizon-testnet.stellar.org",
+  network: "testnet",
+  functions: {
+    create: "open_route_pool",
+    fund: "collect_driver_due",
+    attest: "approve_member_case",
+    release: "release_member_fund",
+  },
+};
